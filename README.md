@@ -1,22 +1,16 @@
-# 📘 Machine Translation with Seq2Seq + Attention
+# Machine Translation with Seq2Seq + Attention
 
-## 🔹 Overview  
-This project implements a **Neural Machine Translation (NMT)** system using a **Sequence-to-Sequence (Seq2Seq)** model with an **Attention mechanism**.  
-It is trained on the **English ↔ German Multi30k dataset** (can be extended to other languages).  
-
-Key features:  
-- Encoder–Decoder architecture (LSTM)  
-- Bahdanau-style Attention  
-- BLEU score evaluation  
-- Translation of custom sentences  
-- Model saving and loading  
+This project implements a sequence-to-sequence neural machine translation (NMT) model with attention using PyTorch.  
+The model is trained on the **Multi30k English ↔ German dataset**.
 
 ---
 
-## 🔹 Requirements  
-Run the project in **Google Colab** or locally with:  
+## 🚀 How to Run
 
-```bash
-pip install torch torchtext spacy
-python -m spacy download en_core_web_sm
-python -m spacy download de_core_news_sm
+1. Open the [Colab notebook](https://colab.research.google.com/)  
+2. Click **Runtime > Run all**  
+3. The model will train and save as `seq2seq_attention.pth`  
+4. You can find the saved model under the Colab **Files** tab.  
+5. To install dependencies:
+   ```bash
+   pip install -r requirements.txt
